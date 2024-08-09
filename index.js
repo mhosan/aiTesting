@@ -1,6 +1,9 @@
 import { HfInference } from "@huggingface/inference";
+import { config } from 'dotenv';
 
-const hf = new HfInference("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");
+config();
+
+const hf = new HfInference(process.env.HF_TOKEN);
 const imageURL1="https://media.ambito.com/p/67e1cdc69057c1863724eddcd8269faa/adjuntos/239/imagenes/040/456/0040456799/gatos-portadajpg.jpg";
 const imageURL2="https://p1.pxfuel.com/preview/721/440/835/city-woman-fashion-model-female-sunglasses.jpg";
 const imageURL3="https://p1.pxfuel.com/preview/318/628/974/homemade-bread-dough-baking-flour-cooking.jpg";

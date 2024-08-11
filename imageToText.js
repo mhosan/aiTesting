@@ -20,7 +20,7 @@ const model3 = "microsoft/git-base";
 const result =await hf.imageToText({
     //data: readFileSync('test/cats.png'),
     data: miBlob,
-    model: model3
+    model: model1
   })
 
   console.log(result);
